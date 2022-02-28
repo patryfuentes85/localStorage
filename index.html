@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="" class="formulario">
@@ -22,10 +23,22 @@
                 <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
             </div>
             <div>
-                <label for="img">Img:</label>
-                <input type="file" id="img">
+                <label for="id">Id a eliminar</label>
+                <input type="text" id="id">
             </div>
+            <input type="submit" id="enviar">
+            <input type="submit" id="eliminar" value="Eliminar">
+            <input type="submit" id="eliminarto2" value="Eliminar todos">
         </fieldset>
     </form>
+    <div id="div">
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
